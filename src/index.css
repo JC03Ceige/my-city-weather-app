@@ -1,13 +1,146 @@
+/* We import the boostrap styling and fonts from GoogleFonts*/
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,600;0,900;1,600;1,900&family=Shizuru&display=swap");
+
+/* This block sets generic styling for the entire app body.*/
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Shizuru",
+    "Montserrat Alternates", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: black;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: black;
+  background-image: url(../assets/midday.png);
+  background-position: center;
+  background-position-y: inherit;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 2em;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* We style the h1 element. */
+h1.title {
+  font-family: "Montserrat Alternates";
+  background-color: rgba(215, 235, 235, 0.6);
+  padding: 0.5em 1em;
+  width: 100vw;
+  height: 90px;
+  text-align: left;
+}
+
+/* Styling for the input block of the UI */
+div .input-header {
+  width: 100%;
+  display: inline-flex;
+  margin: 1em auto;
+  justify-content: space-between !important;
+}
+
+/* Styling for the user inputs. */
+.input {
+  font-family: "Montserrat Alternates";
+  border-radius: 10px;
+  margin: 1.5em 0.5em;
+  box-shadow: inset -1px -1px 5px 2px rgba(187, 197, 196, 0.836);
+}
+
+/* Styling for the button.
+Box-shadow is used to give is a slight 3D effect.*/
+button {
+  font-family: "Montserrat Alternates";
+  position: initial;
+  right: 2em;
+  align-self: flex-end;
+  margin: 1em;
+  margin-left: 50vw;
+  border-radius: 5em;
+  border: none;
+  background-color: rgb(196, 226, 216);
+  padding: 0.5em 1em;
+  box-shadow: inset -1px -1px 4px 3px rgb(167, 211, 205),
+    inset 1px -2px 6px 2px rgba(255, 255, 255, 0.719),
+    -1px -2px 4px 1px rgba(119, 136, 153, 0.623);
+}
+
+/* This styles the card element. We use a text-shadow to make the text stand out
+from the light background. */
+.card {
+  border-radius: 7px;
+  font-family: "Shizuru";
+  letter-spacing: 1.5px;
+  background-color: rgba(179, 179, 179, 0.85);
+  box-shadow: 1px 1px 8px 3px rgba(119, 136, 153, 0.623);
+  margin: 2em auto;
+  align-self: center;
+  -webkit-text-stroke: 0.5px rgb(170, 255, 255);
+  text-shadow: 1.5px 1.5px 2px rgb(68, 68, 68), 1.3px 1.3px 2.5px grey;
+}
+
+/* Styling the card title */
+.card-title {
+  background-color: rgba(255, 247, 211, 0.618);
+  border-radius: 5px;
+  padding: 5px;
+  letter-spacing: 2.5px;
+  line-height: 150%;
+  font-weight: bold;
+}
+
+/* Styling the list block. */
+.list-group-flush {
+  max-height: 12em;
+  margin-bottom: 5px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: rgba(236, 246, 255, 0.7) !important;
+}
+
+/* The following 5 blocks style the scrollbar in the list group. */
+.list-group-flush::-webkit-scrollbar {
+  width: 11px;
+}
+.list-group-flush {
+  scrollbar-width: thin;
+  scrollbar-color: darkslategrey;
+}
+.list-group-flush::-webkit-scrollbar-track {
+  background: lightgrey;
+  box-shadow: inset 1px 1px 2px grey, inset -1px -1px 2px grey;
+  border-radius: 5px;
+}
+.list-group-flush::-webkit-scrollbar-thumb {
+  background-color: rgb(182, 255, 255);
+  border-radius: 6px;
+  border: 1px solid rgb(155, 154, 154);
+  box-shadow: inset 1px 1px 1px lightgray, inset -1px -1px 1px lightgray;
+}
+
+/* Styling the list items to make it stand out. */
+.list-item {
+  display: flex;
+  font-family: "Montserrat Alternates";
+  -webkit-text-stroke: 1px rgb(0, 55, 100);
+  -webkit-text-fill-color: rgb(0, 97, 92);
+  justify-content: space-between;
+  background-color: rgba(236, 246, 255, 0.7) !important;
+}
+
+/* This styles a span element which sets the list labels apart from the other content. */
+.list-content {
+  font-family: "Montserrat Alternates";
+  -webkit-text-stroke: 0.5px rgb(238, 176, 41);
+  -webkit-text-fill-color: rgb(253, 238, 30);
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgb(65, 65, 65), 1.5px 1.5px 1.5px rgb(177, 177, 177),
+    -0.5px -0.5px 2px rgb(121, 121, 121), -1px -1px 2px rgb(177, 177, 177);
 }

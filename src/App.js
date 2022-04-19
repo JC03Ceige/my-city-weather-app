@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+/* The WeatherUI component is imported to be rendered in the App. */
+import WeatherUI from "./components/WeatherUI";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WeatherUI />
     </div>
   );
-}
+};
 
 export default App;

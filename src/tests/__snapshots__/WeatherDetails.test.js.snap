@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="card card"
+    style={
+      Object {
+        "backgroundColor": "rgba(215, 235, 235, 0.5)",
+        "width": "18rem",
+      }
+    }
+  >
+    <div
+      className="card-body"
+    >
+      <div
+        className="card-title h5"
+      >
+        <span>
+           
+          London
+          , 
+          GB
+        </span>
+        <h1>
+           
+          7
+          <sup>
+            o
+          </sup>
+           C 
+              
+          <img
+            alt="weather_icon"
+            src="http://openweathermap.org/img/wn/09d.png"
+          />
+        </h1>
+        <h3>
+          Drizzle
+        </h3>
+        <p
+          className="card-text"
+        >
+          light intensity drizzle
+        </p>
+      </div>
+    </div>
+    <div
+      className="list-group-flush list-group"
+      onKeyDown={[Function]}
+    >
+      <div
+        className="list-item list-group-item"
+        data-rr-ui-event-key={null}
+        onClick={[Function]}
+      >
+        <span
+          className="list-content"
+        >
+          Feels Like:
+        </span>
+         
+        NaN
+      </div>
+      <div
+        className="list-item list-group-item"
+        data-rr-ui-event-key={null}
+        onClick={[Function]}
+      >
+        <span
+          className="list-content"
+        >
+          Humidity:
+        </span>
+         
+        81
+      </div>
+      <div
+        className="list-item list-group-item"
+        data-rr-ui-event-key={null}
+        onClick={[Function]}
+      >
+        <span
+          className="list-content"
+        >
+          Wind Speed:
+        </span>
+         
+        4.1
+         
+        km/h
+      </div>
+      <div
+        className="list-item list-group-item"
+        data-rr-ui-event-key={null}
+        onClick={[Function]}
+      >
+        <span
+          className="list-content"
+        >
+          Max-Temp:
+        </span>
+         
+        8
+      </div>
+      <div
+        className="list-item list-group-item"
+        data-rr-ui-event-key={null}
+        onClick={[Function]}
+      >
+        <span
+          className="list-content"
+        >
+          Min-Temp:
+        </span>
+         
+        6
+      </div>
+      <div
+        className="list-item list-group-item"
+        data-rr-ui-event-key={null}
+        onClick={[Function]}
+      >
+        <span
+          className="list-content"
+        >
+          Sunrise:
+        </span>
+         
+        18:47:55
+      </div>
+      <div
+        className="list-item list-group-item"
+        data-rr-ui-event-key={null}
+        onClick={[Function]}
+      >
+        <span
+          className="list-content"
+        >
+          Sunset:
+        </span>
+         
+        09:40:37
+      </div>
+    </div>
+    <div
+      className="card-body"
+    />
+  </div>
+</div>
+`;
